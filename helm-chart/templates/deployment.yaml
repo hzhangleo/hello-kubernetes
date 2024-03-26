@@ -18,6 +18,8 @@ spec:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.deployment.container.image.repository }}:{{ .Values.deployment.container.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.deployment.container.image.pullPolicy }}
+          imagePullSecrets:
+          - name: default-secret
           ports:
             - name: http
               containerPort: {{ .Values.deployment.container.port }}
