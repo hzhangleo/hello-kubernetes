@@ -14,8 +14,8 @@ deployment:
   replicaCount: 1
   container:
     image:
-      repository: "swr.me-east-1.myhuaweicloud.com/yxy0325/test" 
-      tag: "vv2"
+      repository: "swr.me-east-1.myhuaweicloud.com/yxy0325/nginx" 
+      tag: "perl"
       pullPolicy: IfNotPresent
     port: 8080
   # Currently only linux images on amd64 architecture are supported - support for arm64 and windows/amd64 coming ...
