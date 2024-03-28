@@ -16,7 +16,7 @@ deployment:
     image:
       # repository: "swr.me-east-1.myhuaweicloud.com/yxy0325/nginx" 
       repository: "swr.cn-east-273.antacloud.com/test/nginx"
-      tag: "1.0.1"
+      tag: "zxw-test"
       pullPolicy: IfNotPresent
     port: 8080
   # Currently only linux images on amd64 architecture are supported - support for arm64 and windows/amd64 coming ...
